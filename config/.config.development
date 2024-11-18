@@ -1,0 +1,4 @@
+# Environment variables
+URL='https://thinking-tester-contact-list.herokuapp.com/'
+USERNAME='test123@hotmail.com'
+PASSWORD=123456789
