@@ -1,10 +1,6 @@
-/**
- * In this file, are imported all the fixtures file to be combined and be used all of them in the tests.
- */
+import {mergeTests, test as base} from "@playwright/test";
+import {test as LoginFixture} from "./Login.fixtures";
+import {test as ContactFixture} from "./Contact.fixtures";
+import {test as CreateUserFixture} from "./CreateUser.fixtures";
 
-import {mergeTests} from "@playwright/test";
-import {test as CommonFixtures} from "./Common.fixture";
-import {test as PagesFixtures} from "./Pages.fixture";
-import {test as FilesHandlingFixtures} from "./FilesHandling.fixture";
-
-export const test = mergeTests(CommonFixtures, PagesFixtures, FilesHandlingFixtures);
+export const test = mergeTests(LoginFixture, ContactFixture, CreateUserFixture);
