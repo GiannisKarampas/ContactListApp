@@ -7,9 +7,18 @@ This project will implement an automated testing suite using the Playwright fram
 
 - Node.js (v20.15.1)
 - npm (v10.7.0)
+- Typescript
 - Playwright
 - Git
-- 
+
+## Justification for Choosing TypeScript
+TypeScript was chosen as the primary language for this project due to its unique combination of developer productivity, robustness, and alignment with modern development practices. Here are the specific reasons for selecting TypeScript:
+
+**Type Safety**
+   - Error Reduction: TypeScript adds static typing to JavaScript, enabling the detection of type-related errors at compile time rather than at runtime. This improves code quality and reduces bugs.
+   - Stronger Contracts: Features like interfaces and type aliases allow defining robust data structures, making API contracts more predictable and maintainable.
+   - Tooling Support: IDEs like VSCode offer better autocompletion, refactoring, and inline error checking with TypeScript.
+
 ## Framework Structure
 ```bssh
 HarborLab_Assessment/
@@ -41,7 +50,7 @@ HarborLab_Assessment/
 
 1. Clone the Repository
 ```bash
-git clone https://github.com/GiannisKarampas/GiannisKarampatzakis-Cypress.git
+git clone git@github.com:GiannisKarampas/ContactListApp.git
 ```
 2. Install Dependencies
 ```bash
