@@ -16,7 +16,6 @@ export class ContactForm extends NewContact{
     }
 
     async editContactWithCorrectData(user: UserObj) {
-        console.log(user.phoneNumber)
         await this.editContactButton.click()
         await this.firstName.fill(user.firstName);
         await this.lastName.fill(user.lastName);
