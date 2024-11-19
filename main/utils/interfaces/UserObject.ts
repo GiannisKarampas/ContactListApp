@@ -1,27 +1,16 @@
-import {faker} from "@faker-js/faker";
-
-interface UserObj {
+export interface UserObj {
     _id: string;
     firstName: string;
     lastName: string;
-    birthday: string;
+    birthdate: string;
     email: string;
+    password: string;
     businessOrIndividual: string;
     company: string;
     phoneNumber: string;
     address: string;
-}
-
-export function createRandomUser(): UserObj {
-    return {
-        _id: faker.string.uuid(),
-        firstName: faker.person.firstName("male"),
-        lastName: faker.person.lastName("male"),
-        birthday: faker.date.birthdate({min: 18, max: 70, mode: "age"}).toLocaleDateString(),
-        email: faker.internet.email(),
-        businessOrIndividual: faker.helpers.arrayElement(["Business", "Individual"]),
-        company: faker.company.name(),
-        phoneNumber: faker.phone.number(),
-        address: faker.location.streetAddress(true),
-    };
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
 }

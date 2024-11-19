@@ -1119,3 +1119,6 @@ test-results.xml
  
 # CBSG Jira Reporting Tool
 !CBSG*.jar
+/test-results/
+/blob-report/
+/playwright/.cache/

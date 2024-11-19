@@ -1,6 +1,54 @@
 {
     "compilerOptions": {
         "forceConsistentCasingInFileNames": true,
-        "resolveJsonModule": false
+        "resolveJsonModule": false,
+        "baseUrl": "./",
+        "paths": {
+            "@main/*": [
+                "main/*"
+            ],
+            "@test/*": [
+                "test/*"
+            ],
+            "@resources/*": [
+                "resources/*"
+            ],
+            "@utils/*": [
+                "main/utils/*"
+            ],
+            "@fixtures/*": [
+                "main/fixtures/*"
+            ],
+            "@testData/*": [
+                "resources/testData/*"
+            ],
+            "@testProperties/*": [
+                "resources/testData/properties/*"
+            ],
+            "@auth/*": [
+                "main/utils/auth/*"
+            ],
+            "@pages/*": [
+                "main/pages/*"
+            ],
+            "@enums/*": [
+                "main/utils/enums/*"
+            ],
+            "@interfaces/*": [
+                "main/utils/interfaces/*"
+            ],
+            "@guiTests/*": [
+                "test/gui/*"
+            ],
+            "@apiTests/*": [
+                "test/api/*"
+            ],
+            "@output/*": [
+                "output/*"
+            ],
+            "@models/*": [
+                "output/generatedModels/*"
+            ]
+        }
     }
 }
