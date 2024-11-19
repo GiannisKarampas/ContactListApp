@@ -50,7 +50,7 @@ HarborLab_Assessment/
 
 1. Clone the Repository
 ```bash
-git clone git@github.com:GiannisKarampas/ContactListApp.git
+git clone https://github.com/GiannisKarampas/ContactListApp.git
 ```
 2. Install Dependencies
 ```bash
@@ -102,7 +102,6 @@ npm run test:report
 1. Test Coverage: Add more scenarios, such as UI responsiveness.
    2. Field Validation: Test form validation for signup and login (e.g., invalid email format, weak passwords).
    3. Duplicate Entry Prevention: Attempt to create a contact with the same details and verify duplicate prevention.
-   4. Edit a Contact: Update an existing contact's details and verify changes are saved.
 2. Data Management: Implement better approach of data generation or use a mock server.
 3. Continuous Execution: Integrate with CI tools like GitHub Actions or Jenkins.
 4. Apply Cucumber to make it the test cases more friendly/readable

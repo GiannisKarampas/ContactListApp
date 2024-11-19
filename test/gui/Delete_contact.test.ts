@@ -16,6 +16,9 @@ test.beforeAll(async () => {
     token = await APIUtils.addNewUserAndGetToken(user);
     await APIUtils.createNewContact(user, token);
 })
+test.afterAll(async () => {
+    await APIUtils.deleteUser(token);
+});
 
 test("Delete a contact.", async ({page, login, newContact}) => {
     const contactRows = page.locator(".contactTableBodyRow");
