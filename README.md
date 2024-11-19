@@ -37,16 +37,6 @@ HarborLab_Assessment/
 3. **Create a contact with invalid DOB**
 4. **Check Logout functionality**
 
-
-## Extended Test Cases
-
-1. Field Validation 
-- Test form validation for signup and login (e.g., invalid email format, weak passwords).
-2. Duplicate Entry Prevention
-- Attempt to create a contact with the same details and verify duplicate prevention.
-3. Edit a Contact
-- Update an existing contact's details and verify changes are saved.
-
 # Installation and Setup
 
 1. Clone the Repository
@@ -101,5 +91,9 @@ npm run test:report
 ## Areas for Improvement
 
 1. Test Coverage: Add more scenarios, such as UI responsiveness.
+   2. Field Validation: Test form validation for signup and login (e.g., invalid email format, weak passwords).
+   3. Duplicate Entry Prevention: Attempt to create a contact with the same details and verify duplicate prevention.
+   4. Edit a Contact: Update an existing contact's details and verify changes are saved.
 2. Data Management: Implement better approach of data generation or use a mock server.
 3. Continuous Execution: Integrate with CI tools like GitHub Actions or Jenkins.
+4. Apply Cucumber to make it the test cases more friendly/readable
