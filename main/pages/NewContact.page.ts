@@ -8,51 +8,51 @@ export class NewContact {
         this.page = page;
     }
 
-    private get newContactButton(): Locator {
+    protected get newContactButton(): Locator {
         return this.page.locator("#add-contact");
     }
 
-    private get firstName(): Locator {
+    protected get firstName(): Locator {
         return this.page.locator("#firstName");
     }
 
-    private get lastName(): Locator {
+    protected get lastName(): Locator {
         return this.page.locator("#lastName");
     }
 
-    private get email(): Locator {
+    protected get email(): Locator {
         return this.page.locator("#email");
     }
 
-    private get dob(): Locator {
+    protected get dob(): Locator {
         return this.page.locator("#birthdate");
     }
 
-    private get address(): Locator {
+    protected get address(): Locator {
         return this.page.locator("#street1");
     }
 
-    private get city(): Locator {
+    protected get city(): Locator {
         return this.page.locator("#city");
     }
 
-    private get state(): Locator {
+    protected get state(): Locator {
         return this.page.locator("#stateProvince");
     }
 
-    private get postalCode(): Locator {
+    protected get postalCode(): Locator {
         return this.page.locator("#postalCode");
     }
 
-    private get country(): Locator {
+    protected get country(): Locator {
         return this.page.locator("#country");
     }
 
-    private get submitButton(): Locator {
+    protected get submitButton(): Locator {
         return this.page.locator("#submit");
     }
 
-    private get errorMessage(): Locator {
+    protected get errorMessage(): Locator {
         return this.page.locator("#error")
     }
 

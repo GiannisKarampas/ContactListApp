@@ -54,7 +54,7 @@ export class CreateRandomUser {
             password: faker.internet.password(),
             businessOrIndividual: faker.helpers.arrayElement(["Business", "Individual"]),
             company: faker.company.name(),
-            phoneNumber: faker.phone.number(),
+            phoneNumber: faker.phone.number({style: "international"}),
             country: faker.location.country(),
             state: faker.location.state(),
             city: faker.location.city(),

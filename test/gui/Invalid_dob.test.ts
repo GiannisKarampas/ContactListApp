@@ -5,12 +5,16 @@ import {UserObj} from "@interfaces/UserObject";
 import {APIUtils} from "@utils/common/Api.utils";
 
 let user: UserObj;
+let token: string
 
 test.beforeAll(async () => {
 
     user = CreateRandomUser.createRandomUser();
-    await APIUtils.addNewUserAndGetToken(user);
+    token = await APIUtils.addNewUserAndGetToken(user);
 })
+test.afterAll(async () => {
+    await APIUtils.deleteUser(token);
+});
 
 test("Add a contact with invalid date of birth and validate the error message.", async ({page, login, newContact}) => {
     const errorMessage = page.locator("#error");

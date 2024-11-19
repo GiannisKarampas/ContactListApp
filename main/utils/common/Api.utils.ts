@@ -1,4 +1,4 @@
-import {test, request, Page} from "@playwright/test";
+import {test, request, Page, expect} from "@playwright/test";
 import {Logger} from "@utils/common/Logger.utils";
 import {NewContact} from "@pages/NewContact.page";
 import {UserObj} from "@interfaces/UserObject";
@@ -74,4 +74,14 @@ export class APIUtils {
         logger.info(`New contact: ${JSON.stringify(contactResponseJSON)}`);
     }
 
+    public static async deleteUser(token: string): Promise<void> {
+        const apiContext = await request.newContext();
+        const loginResponse = await apiContext.delete("https://thinking-tester-contact-list.herokuapp.com/users/me", {
+            headers: {
+                Authorization: `Bearer ${token}`,
+                "Content-Type": "application/json",
+            },
+        });
+        expect.soft(loginResponse.status()).toEqual(200)
+    }
 }
