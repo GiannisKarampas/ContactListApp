@@ -33,6 +33,7 @@ HarborLab_Assessment/
 │       ├── Check_Logout.test.ts
 │       ├── Create_validate_user.test.ts
 │       ├── Delete_contact.test.ts
+│       ├── Edit_Contact.test.ts
 │       ├── Invalid_dob.test.ts   
 ├── playwright.config.ts
 ├── package.json        
