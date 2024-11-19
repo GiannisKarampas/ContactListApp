@@ -46,6 +46,7 @@ HarborLab_Assessment/
 2. **Delete a contact**
 3. **Create a contact with invalid DOB**
 4. **Check Logout functionality**
+5. **Edit Contact**
 
 # Installation and Setup
 
