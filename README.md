@@ -102,8 +102,8 @@ npm run test:report
 ## Areas for Improvement
 
 1. Test Coverage: Add more scenarios, such as UI responsiveness.
-   2. Field Validation: Test form validation for signup and login (e.g., invalid email format, weak passwords).
-   3. Duplicate Entry Prevention: Attempt to create a contact with the same details and verify duplicate prevention.
+   - Field Validation: Test form validation for signup and login (e.g., invalid email format, weak passwords).
+   - Duplicate Entry Prevention: Attempt to create a contact with the same details and verify duplicate prevention.
 2. Data Management: Implement better approach of data generation or use a mock server.
 3. Continuous Execution: Integrate with CI tools like GitHub Actions or Jenkins.
 4. Apply Cucumber to make it the test cases more friendly/readable
